@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduAI - IA Adaptativa para el Aprendizaje</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #000;
+        }
+
+        header {
+            background-color: #ffa07a;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        nav .links {
+            display: flex;
+            justify-content: center;
+            flex: 1;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        nav a:hover {
+            background-color: #ffa07a;
+        }
+
+        .auth-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .auth-buttons button {
+            background-color: #ffa07a;
+            border: none;
+            color: white;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+
+        .auth-buttons button:hover {
+            background-color: #e5946a;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .info-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 40px auto;
+            max-width: 1200px;
+        }
+
+        .info-section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .info-section img {
+            width: 40%;
+            border-radius: 10px;
+        }
+
+        .info-section div {
+            width: 50%;
+            padding: 20px;
+            font-size: 1.5rem;
+        }
+
+        .button {
+            background-color: #ffa07a;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px auto;
+            cursor: pointer;
+        }
+
+        .subscription-cards {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            align-items: stretch;
+            margin: 60px auto;
+            max-width: 1200px;
+        }
+
+        .card {
+            border: 1px solid #000;
+            border-radius: 10px;
+            padding: 20px;
+            width: 30%;
+            height: 300px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: 1.2rem;
+        }
+
+        .card p strong {
+            display: block;
+            margin-top: 10px;
+        }
+
+        #suscripcion h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a EduAI</h1>
+        <p>La Inteligencia Artificial adaptativa para el aprendizaje</p>
+    </header>
+    <nav>
+        <div class="links">
+            <a href="#informacion">Información</a>
+            <a href="#suscripcion">Planes de Suscripción</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#sobre-nosotros">Sobre Nosotros</a>
+            <a href="#faq">FAQ</a>
+        </div>
+        <div class="auth-buttons">
+            <button>Registrarse</button>
+            <button>Iniciar Sesión</button>
+        </div>
+    </nav>
+
+    <section id="informacion">
+        <div class="info-section">
+            <img src="img1.webp" alt="Inteligencia Artificial">
+            <div>
+                <h2>¿Qué es EduAI?</h2>
+                <p>EduAI es una plataforma que utiliza inteligencia artificial para personalizar el aprendizaje de estudiantes. Adaptamos el contenido educativo a las necesidades de cada usuario, ofreciendo ejercicios dinámicos y retroalimentación en tiempo real.</p>
+            </div>
+        </div>
+        <div class="info-section">
+            <img src="img3.webp" alt="Beneficios de EduAI">
+            <div>
+                <h2>Beneficios</h2>
+                <p>Con EduAI, los estudiantes pueden progresar a su ritmo gracias a algoritmos avanzados que identifican sus fortalezas y debilidades. Esto permite un aprendizaje más eficiente y enfocado en resultados.</p>
+            </div>
+        </div>
+        <div class="info-section">
+            <img src="img2.webp" alt="Características de EduAI">
+            <div>
+                <h2>Características</h2>
+                <ul>
+                    <li>Ejercicios personalizados para cada nivel educativo.</li>
+                    <li>Explicaciones visuales y auditivas accesibles para todos.</li>
+                    <li>Informes detallados para estudiantes, familias y educadores.</li>
+                    <li>Acceso a la plataforma 24/7 desde cualquier dispositivo.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="suscripcion">
+        <h2>Planes de Suscripción</h2>
+        <div class="subscription-cards">
+            <div class="card">
+                <h3>Plan Individual</h3>
+                <p>Perfecto para estudiantes individuales que desean mejorar en sus materias. <strong>10€/mes</strong></p>
+                <button class="button">Suscríbete</button>
+            </div>
+            <div class="card">
+                <h3>Plan Familiar</h3>
+                <p>Diseñado para familias que desean apoyar a varios estudiantes. <strong>20€/mes</strong></p>
+                <button class="button">Suscríbete</button>
+            </div>
+            <div class="card">
+                <h3>Plan Escolar</h3>
+                <p>La mejor opción para colegios y profesores. <strong>50€/mes</strong></p>
+                <button class="button">Suscríbete</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 EduAI - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
